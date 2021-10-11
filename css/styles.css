@@ -1,0 +1,107 @@
+/*Portal website styles*/
+. {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+}
+
+#wrapper {
+    width:940px;
+    margin:20px auto;
+}
+
+#primary {
+    line-height: 50px;
+    height:50px;
+    background: rgba(80,169,203,0.98);
+    /* keep the height of the nav*/
+}
+
+#primary ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#primary li {
+    list-style-type: none;
+    float: left;
+    width:14%; /*7 list items in 100 - math*/
+    text-align: center;
+
+}
+
+#primary a {
+    text-decoration: none;
+    color:#fff;
+    display:block;
+
+}
+
+#primary a:hover {
+    background: #336699;
+}
+
+h1 {
+    font-size: 3em;
+    color: #336699;
+}
+
+section {
+    width:65%;
+    float:left;
+}
+
+aside {
+    width:34%;
+    float:right;
+    margin-top: 10px;
+
+}
+
+aside p {
+    font-size: .5em;
+}
+
+aside ul {
+    color: rgba(203,27,18,0.98);
+    font-size: 1.2em;
+}
+
+aside li {
+    font-size: .875em;
+    list-style-type: none;
+
+}
+
+img {
+    max-width:75%;
+    display:block; /*removes space below image*/
+}
+
+footer {
+    height:50px;
+    line-height: 50px;
+    border-top:1px dotted #333;
+    clear: both;
+}
+
+footer li {
+    float:left;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+footer ul {
+    float: right;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
