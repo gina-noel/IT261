@@ -1,5 +1,5 @@
 /*Portal website styles*/
-. {
+* {
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -49,38 +49,50 @@ body {
 h1 {
     font-size: 3em;
     color: #336699;
+    padding-bottom: 20px;
 }
 
-section {
-    width:65%;
-    float:left;
+h2 {
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: red;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#hero {
+    margin-bottom: 20px;
+}
+
+main {
+    max-width:61.70%;
+    float: left;
+
 }
 
 aside {
-    width:34%;
-    float:right;
-    margin-top: 10px;
-
-}
-
-aside p {
-    font-size: .5em;
-}
-
-aside ul {
-    color: rgba(203,27,18,0.98);
-    font-size: 1.2em;
-}
-
-aside li {
-    font-size: .875em;
-    list-style-type: none;
-
+    max-width:36.17%;
+    float: right;
+    padding-bottom: 10px;
 }
 
 img {
-    max-width:75%;
+    max-width:100%;
     display:block; /*removes space below image*/
+}
+
+aside p {
+    font-size: .75em;
+}
+
+aside li {
+    list-style-type: none;
+}
+aside a {
+    font-size: .875em;
+    color: #336699;
 }
 
 footer {
