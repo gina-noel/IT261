@@ -10,9 +10,9 @@ body {
     font-size: 100%;
 }
 
-#wrapper {
-    width:940px;
-    margin:20px auto;
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 #primary {
@@ -46,36 +46,38 @@ body {
     background: #336699;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px; /*use margin bottom instead of padding*/
+}
+
 h1 {
     font-size: 3em;
     color: #336699;
-    padding-bottom: 20px;
-}
-
-h2 {
-    padding-bottom: 20px;
 }
 
 h3 {
     color: red;
-    padding-bottom: 10px;
     padding-top: 20px;
 }
 
-#hero {
+p {
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 main {
     max-width:61.70%;
     float: left;
-
 }
 
 aside {
     max-width:36.17%;
     float: right;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 img {
@@ -116,4 +118,5 @@ footer ul {
     width: 150px;
     height: 150px;
     display: block;
+    margin: 0 auto;
 }
