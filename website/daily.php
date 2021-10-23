@@ -9,11 +9,12 @@ if(isset($_GET['today'])) {
 }
 
 switch($today) {
-    case '<Monday>' :
+    case 'Monday' :
         $yoga = '<h2>Monday is our Vinyasa yoga Day!</h2>';
         $pic = 'vinyasa.jpeg';
         $alt = 'Vinyasa yoga';
         $content ='<b>A vinyasa</b> is a smooth transition between asanas in styles of modern yoga as exercise such as Vinyasa Krama Yoga, Ashtanga Vinyasa Yoga and Bikram Yoga, especially when movement is paired with the breath.';
+        echo '<body style="background-color: rgba(180,203,181,0.98)">';
         break;
 
     case 'Tuesday' :
@@ -21,6 +22,7 @@ switch($today) {
         $pic = 'hatha.jpg';
         $alt = 'Hatha yoga';
         $content ='<b>Haṭha yoga</b> is a branch of yoga. The Sanskrit word हठ haṭha literally means "force" and thus alludes to a system of physical techniques.';
+        echo '<body style="background-color: rgba(140,203,133,0.98)">';
         break;
 
     case 'Wednesday' :
@@ -28,6 +30,7 @@ switch($today) {
         $pic = 'bikram.jpg';
         $alt = 'Bikram yoga';
         $content ='<b>Bikram Yoga</b> is a system of hot yoga, a type of yoga as exercise, devised by Bikram Choudhury and based on the writings of B. C. Ghosh, that became popular in the early 1970s.';
+        echo '<body style="background-color: rgba(203,165,199,0.98)">';
         break;
 
     case 'Thursday' :
@@ -35,6 +38,7 @@ switch($today) {
         $pic = 'yin.jpg';
         $alt = 'Yin yoga';
         $content ='<b>Yin Yoga</b> is a slow-paced style of yoga as exercise, incorporating principles of traditional Chinese medicine, with asanas that are held for longer periods of time than in other styles.';
+        echo '<body style="background-color: rgba(187,199,203,0.98)">';
         break;
 
     case 'Friday' :
@@ -42,6 +46,7 @@ switch($today) {
         $pic = 'restorative.jpg';
         $alt = 'Restorative yoga';
         $content ='<b>Restorative Yoga</b> is the practice of asanas, each held for longer than in conventional yoga as exercise classes, often with the support of props such as folded blankets, to relax the body, reduce stress, and often to prepare for pranayama.';
+        echo '<body style="background-color: rgba(203,183,132,0.98)">';
         break;
 
     case 'Saturday' :
@@ -49,6 +54,7 @@ switch($today) {
         $pic = 'kundalini.jpg';
         $alt = 'Kundalini yoga';
         $content ='<b>Kundalini yoga</b> derives from kundalini, defined in Vedantic culture as energy that lies dormant at the base of the spine until it is activated and channeled upward through the chakras in the process of spiritual perfection. Kundalini is believed by adherents to be power associated with the divine feminine.';
+        echo '<body style="background-color: rgba(88,199,203,0.98)">';
         break;
 
     case 'Sunday' :
@@ -56,6 +62,7 @@ switch($today) {
         $pic = 'ashtanga.jpg';
         $alt = 'Ashtanga yoga';
         $content ='<b>Ashtanga Yoga</b> is a style of yoga as exercise popularised by K. Pattabhi Jois during the 20th century, often promoted as a modern-day form of classical Indian yoga. He claimed to have learnt the system from his teacher, Tirumalai Krishnamacharya. The style is energetic, synchronising breath with movements.';
+        echo '<body style="background-color: rgba(172,128,203,0.98)">';
         break;
 }
 ?>
