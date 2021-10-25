@@ -63,22 +63,17 @@ if(isset($_GET['today'])) {
 <body class="<?php echo $body; ?>">
 <header>
     <div class="header-inner">
-        <a href="index.html">
+        <a href="index.php">
             <img id="logo" src="images/logo.png" alt="image">
-            <!--    <img id="logo" src="images/logo.jpg" alt="image">-->
         </a>
         <nav>
             <ul>
                 <?php
                 foreach($nav as $key => $value) {
                     if(THIS_PAGE == $key) {
-                       echo '
-                       <li><a class="current" href="'.$key.' ">'.$value.'</a></li>
-                       ';
+                       echo '<li><a class="current" href="'.$key.'">'.$value.'</a></li>';
                     } else {
-                    echo '
-                    <li><a href="'.$key.' ">'.$value.'</a></li>
-                    ';
+                    echo '<li><a href="'.$key.'">'.$value.'</a></li>';
                 }}
                 ?>
 

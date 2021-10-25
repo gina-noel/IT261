@@ -18,7 +18,7 @@
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="website/daily.php">Switch-3</a></li>
-            <li><a href="troubleshoot.php">Troubleshoot-4</a></li>
+            <li><a href="adder.php">Troubleshoot-4</a></li>
             <li><a href="calculator.php">Calculator-5</a></li>
             <li><a href="email.php">Email-6</a></li>
             <li><a href="gallery.php">Gallery-7</a></li>
@@ -65,6 +65,14 @@
             <li><a href="weeks/week3/forloop.php">Forloop</a></li>
             <li><a href="weeks/week3/if.php">If</a></li>
             <li><a href="weeks/week3/switch.php">Switch</a></li>
+        </ul>
+        <h4>Week 4</h4>
+        <ul>
+            <li><a href="weeks/week4/form1.php">Form 1</a></li>
+            <li><a href="weeks/week4/form2.php">Form 2</a></li>
+            <li><a href="weeks/week4/form3.php">Form 3</a></li>
+            <li><a href="weeks/week4/form-arithmetic.php">Form Arithmetic</a></li>
+            <li><a href="weeks/week4/celsius.php">Celsius</a></li>
         </ul>
     </aside>
     <!-- END RIGHT COL -->

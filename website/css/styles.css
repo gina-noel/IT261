@@ -31,8 +31,6 @@ h2 {
     color: #336699;
 }
 
-
-
 p {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -118,3 +116,30 @@ footer li {
      float: right;
  }
 
+.backgroundMon {
+    background-color: rgba(180,203,181,0.98);
+}
+
+.backgroundTues {
+    background-color: rgba(140,203,133,0.98);
+}
+
+.backgroundWed {
+    background-color: rgba(203,165,199,0.98);
+}
+
+.backgroundThur {
+    background-color: rgba(187,199,203,0.98);
+}
+
+.backgroundFri {
+    background-color: rgba(203,183,132,0.98);
+}
+
+.backgroundSat {
+    background-color: rgba(88,199,203,0.98);
+}
+
+.backgroundSun {
+    background-color: rgba(172,128,203,0.98);
+}
