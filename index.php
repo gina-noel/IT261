@@ -74,6 +74,14 @@
             <li><a href="weeks/week4/form-arithmetic.php">Form Arithmetic</a></li>
             <li><a href="weeks/week4/celsius.php">Celsius</a></li>
         </ul>
+        <h4>Week 5</h4>
+        <ul>
+            <li><a href="weeks/week5/currency1.php">Form 1</a></li>
+            <li><a href="weeks/week5/currency2.php">Form 2</a></li>
+            <li><a href="weeks/week5/currency3.php">Form 3</a></li>
+            <li><a href="weeks/week5/null.php">Form 3</a></li>
+<!--            <li><a href="weeks/week5/currency4.php">Extra Credit</a></li>-->
+        </ul>
     </aside>
     <!-- END RIGHT COL -->
 

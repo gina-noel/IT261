@@ -1,7 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!doctype html> // added doctype
+<html lang="en"> // added lang="en"
 <head>
     <title>My Adder Assignment</title>
+    // added all the stying
     <style>
         h1 {
             color: green;
@@ -25,27 +26,30 @@
 </head>
 <body>
 <h1>Adder.php</h1>
-<form action="" method="post">
-    <label>Enter the first number:</label>
-    <input type="number" name="num1"><br>
-    <label>Enter the second number:</label>
-    <input type="number" name="num2"><br>
-    <input type="submit" value="Add Em!!">
+<form action="" method="post"> // removed \ in front of form, missing method post
+    <label>Enter the first number:</label> <-- missing beginning label
+    <input type="number" name="num1"><br> // fixed num1, changed type to number
+    <label>Enter the second number:</label> // fixed the opening and closing labels
+    <input type="number" name="num2"><br> // changed type to number
+    <input type="submit" value="Add Em!!"> // missing double quotes after Em!!
 </form>
 
 </body>
 </html>
-<?php //adder-wrong.php
+<?php //adder-wrong.php added a space here
 
-if (isset($_POST['num1'], $_POST['num2'])) {
+if (isset($_POST['num1'], $_POST['num2'])) { // added check for num2
     $num1 = $_POST['num1'];
-    $num1_int = intval($num1);
+    $num1_int = intval($num1); // added to fix error
     $num2 = $_POST['num2'];
-    $num2_int = intval($num2);
-    $myTotal = $num1_int + $num2_int;
-    echo '<h2>You added ' . $num1_int . ' and ' . $num2_int . '</h2>';
-    echo '<p>and the answer is<br>
-    ' . $myTotal . '!</p>';
+    $num2_int = intval($num2); // added to fix error
+    $myTotal = $num1_int + $num2_int; // removed -, fixed Num2 to num2, but put in the intval due to error
+    echo '<h2>You added '.$num1_int.' and '.$num2_int.'</h2>'; // updated vars to fix error
+//    fixed the closing < h1> tag, changed it to single quotes for ease of
+//    reading, use single quote instead of double quote before
+//    num1, missing a single quote in front of num2, remove space after num2
+    echo '<p>and the answer is<br> //style tag should be inside p tag, I moved it into the style section
+    '.$myTotal.'!</p>';
     echo '<p><a href="">Reset page</a></p>';
 }
 ?>

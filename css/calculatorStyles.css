@@ -1,0 +1,82 @@
+/*css for calculator project*/
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+}
+
+form {
+    width:400px;
+    margin: 30px auto ;
+    border-style: none;
+    background-color: beige;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    border-style: none;
+    margin-top: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
+form ul {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    list-style-type:none;
+}
+
+select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*span is an inline element, so you have to display block*/
+.error {
+    display: block;
+    color: red;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 3px;
+}
+
+.box {
+    display: block;
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 2px black;
+    text-align: center;
+}
