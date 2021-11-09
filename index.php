@@ -82,6 +82,12 @@
             <li><a href="weeks/week5/null.php">Form 3</a></li>
 <!--            <li><a href="weeks/week5/currency4.php">Extra Credit</a></li>-->
         </ul>
+        <h4>Week 6</h4>
+        <ul>
+            <li><a href="weeks/week6/form1.php">Form 1</a></li>
+            <li><a href="weeks/week6/functions.php">Form 2</a></li>
+            <li><a href="weeks/week6/implode.php">Form 3</a></li>
+        </ul>
     </aside>
     <!-- END RIGHT COL -->
 
