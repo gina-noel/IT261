@@ -51,6 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
         { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
             $phone_Err = 'Invalid format!';
+            unset($_POST['phone']);
         } else{
             $phone = $_POST['phone'];
         }
