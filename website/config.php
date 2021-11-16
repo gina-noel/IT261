@@ -43,10 +43,10 @@ switch(THIS_PAGE) {
         $body = 'project inner';
         $headline = 'Welcome to our Project page of our IT261 Website';
         break;
-    case 'content.php':
-        $title = 'Content page of our IT261 Website';
-        $body = 'content inner';
-        $headline = 'Welcome to our Content page of our IT261 Website';
+    case 'contact.php':
+        $title = 'Contact page of our IT261 Website';
+        $body = 'contact inner';
+        $headline = 'Contact us. We would love to hear from you!';
         break;
     case 'gallery.php':
         $title = 'Gallery page of our IT261 Website';
@@ -120,5 +120,120 @@ switch ($today) {
         break;
 }
 
-
 // emailable form php
+
+
+// random photos....
+$photos = array(
+    'photo1',
+    'photo2',
+    'photo3',
+    'photo4',
+    'photo5',
+);
+
+$photos[0] = 'photo1';
+$photos[1] = 'photo2';
+$photos[2] = 'photo3';
+$photos[3] = 'photo4';
+$photos[4] = 'photo5';
+
+function random_pics($photos) {
+    $i = rand(0, 4);
+    $selected_image = ''.$photos[$i].'.jpg';
+    return '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+}
+
+$name = '';
+$email = '';
+$yogaStyle = '';
+$studioLocation = '';
+$privacy = '';
+$phone = '';
+
+$name_Err = '';
+$email_Err = '';
+$yogaStyle_Err = '';
+$studioLocation_Err = '';
+$privacy_Err = '';
+$phone_Err = '';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if(empty($_POST['name'])) {
+        $name_Err = 'Please fill out your name';
+    } else {
+        $name = $_POST['name'];
+    }
+
+    if(empty($_POST['email'])) {
+        $email_Err = 'Please enter your email';
+    } else {
+        $email = $_POST['email'];
+    }
+
+    if(empty($_POST['phone'])) {  // if empty, type in your number
+        $phone_Err = 'Please enter your phone number please!';
+    } elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+        { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+            $phone_Err = 'Invalid format!';
+            unset($_POST['phone']);
+        } else{
+            $phone = $_POST['phone'];
+        }
+    }
+
+    if(empty($_POST['yogaStyle'])) {
+        $yogaStyle_Err = 'Please choose your favorite Yoga Style';
+    } else {
+        $yogaStyle = $_POST['yogaStyle'];
+    }
+
+    if($_POST['studioLocation'] == NULL) {
+        $studioLocation_Err = 'Please select your favorite studio location';
+    } else {
+        $studioLocation = $_POST['studioLocation'];
+    }
+
+    if(empty($_POST['privacy'])) {
+        $privacy_Err = 'You MUST agree';
+    } else {
+        $privacy = $_POST['privacy'];
+    }
+
+    function my_yogaStyle( ) {
+        $my_return = '';
+        if(!empty($_POST['yogaStyle'])) {
+            $my_return = implode(', ', $_POST['yogaStyle']);
+        }
+        return $my_return;
+
+    } // closes function
+    if(isset(
+        $_POST['name'],
+        $_POST['email'],
+        $_POST['phone'],
+        $_POST['yogaStyle'],
+        $_POST['studioLocation'],
+        $_POST['privacy']
+    )) {
+//        $to = 'szemeo@mystudentswa.com';
+        $to = 'gina.noel@comcast.net';
+        $subject = 'Test Email,' .date('m/d/y');
+        $body = '
+        Name is : '.$name.' '.PHP_EOL.'
+        Email: '.$email.' '.PHP_EOL.'
+        Phone: '.$phone.' '.PHP_EOL.'
+        Location: '.$studioLocation.' '.PHP_EOL.'
+        YogaStyle: '.my_yogaStyle().' '.PHP_EOL.'
+        ';
+        $headers = array(
+            'From'=> 'noreply@mystudentswa.com',
+            'Reply-to'=> ''.$email.''
+        );
+
+        mail($to, $subject, $body, $headers);
+        header('Location: thx.php');
+    }
+
+}

@@ -10,7 +10,6 @@ body {
     background-color: lightgoldenrodyellow;
 }
 
-/*forma styles*/
 form {
     width: 400px;
     margin: 20px auto;
@@ -23,7 +22,6 @@ fieldset {
 label {
     display: block;
 }
-
 
 .error {
     display: block;

@@ -88,6 +88,13 @@
             <li><a href="weeks/week6/functions.php">functions</a></li>
             <li><a href="weeks/week6/implode.php">implode</a></li>
         </ul>
+        <h4>Week 7</h4>
+        <ul>
+            <li><a href="weeks/week7/pictures.php">Pictures</a></li>
+            <li><a href="weeks/week7/random.php">Random</a></li>
+            <li><a href="weeks/week7/strings.php">Strings</a></li>
+        </ul>
+
     </aside>
     <!-- END RIGHT COL -->
 
