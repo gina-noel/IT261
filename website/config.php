@@ -217,8 +217,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_POST['studioLocation'],
         $_POST['privacy']
     )) {
-//        $to = 'szemeo@mystudentswa.com';
-        $to = 'gina.noel@comcast.net';
+        $to = 'szemeo@mystudentswa.com';
+//        $to = 'gina.noel@comcast.net';
         $subject = 'Test Email,' .date('m/d/y');
         $body = '
         Name is : '.$name.' '.PHP_EOL.'

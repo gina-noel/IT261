@@ -21,6 +21,11 @@ header {
     margin:20px auto;
 }
 
+#thxText {
+    text-align: center;
+    color: #336699;
+}
+
 h1 {
     margin-bottom: 20px;
     line-height: 1.4;
