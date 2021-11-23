@@ -94,6 +94,10 @@
             <li><a href="weeks/week7/random.php">Random</a></li>
             <li><a href="weeks/week7/strings.php">Strings</a></li>
         </ul>
+        <h4>Week 8</h4>
+        <ul>
+            <li><a href="weeks/week8/people.php">People</a></li>
+        </ul>
 
     </aside>
     <!-- END RIGHT COL -->
