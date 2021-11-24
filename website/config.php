@@ -65,7 +65,7 @@ if(isset($_GET['today'])) {
 switch ($today) {
     case 'Monday' :
         $yoga = '<h2>Monday is our Vinyasa yoga Day!</h2>';
-        $pic = 'vinyasa.jpeg';
+        $pic = 'vinyasa.jpg';
         $alt = 'Vinyasa yoga';
         $content = '<b>A vinyasa</b> is a smooth transition between asanas in styles of modern yoga as exercise such as Vinyasa Krama Yoga, Ashtanga Vinyasa Yoga and Bikram Yoga, especially when movement is paired with the breath.';
         $background = 'backgroundMon';

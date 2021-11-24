@@ -205,3 +205,29 @@ input[type="submit"]
     margin-top: 5px;
     line-height: 1.4;
 }
+
+table {
+    margin:20px auto;
+    width: 100%;
+    border: 1px solid red;
+    border-collapse: collapse;;
+    table-layout: fixed;
+}
+
+table td {
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+    border: 1px solid red;
+    width: 120px;
+
+}
+
+table td img {
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+}
+
+
+
