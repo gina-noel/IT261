@@ -11,7 +11,7 @@ include('includes/header.php');
         ?>
     </main>
     <aside>
-        <img src="images/vinyasa.jpeg" alt="Vinyasa" />
+        <img src="images/vinyasa.jpg" alt="Vinyasa" />
     </aside>
 
 <?php
