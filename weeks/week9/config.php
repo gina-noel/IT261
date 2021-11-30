@@ -9,15 +9,14 @@ $first_name = '';
 $last_name = '';
 $email = '';
 $username = '';
-$password= '';
+$password = '';
 $success = 'You have successfully logged on!';
 $errors = array();
 
 
 function myError($myFile, $myLine, $errorMsg)
 {
-    if(defined('DEBUG') && DEBUG)
-    {
+    if(defined('DEBUG') && DEBUG) {
         echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
         echo 'Error message: <b> '.$errorMsg.'</b>';
         die();

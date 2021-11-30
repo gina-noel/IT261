@@ -4,7 +4,7 @@ define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
+$nav['people.php'] = 'People';
 $nav['contact.php'] = 'Contact';
 $nav['gallery.php'] = 'Gallery';
 
@@ -38,10 +38,15 @@ switch(THIS_PAGE) {
         $body = 'daily inner';
         $headline = 'Welcome to your Daily Yoga Challenge!!';
         break;
-    case 'project.php':
-        $title = 'Project page of our IT261 Website';
-        $body = 'project inner';
-        $headline = 'Welcome to our Project page of our IT261 Website';
+    case 'people.php':
+        $title = 'People page of our IT261 Website';
+        $body = 'people inner';
+        $headline = 'Welcome to our People page of our IT261 Website';
+        break;
+    case 'people-view.php':
+        $title = 'People view page of our IT261 Website';
+        $body = 'people view inner';
+        $headline = 'Welcome to our People view page of our IT261 Website';
         break;
     case 'contact.php':
         $title = 'Contact page of our IT261 Website';
@@ -121,6 +126,12 @@ switch ($today) {
 }
 
 // emailable form php
+
+$teachers[0] = 'people1';
+$teachers[1] = 'people2';
+$teachers[2] = 'people3';
+$teachers[3] = 'people4';
+$teachers[4] = 'people5';
 
 
 // random photos....
@@ -235,5 +246,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         mail($to, $subject, $body, $headers);
         header('Location: thx.php');
     }
+
+}
+
+
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+
+function myError($myFile, $myLine, $errorMsg)
+{
+    if (defined('DEBUG') && DEBUG) {
+        echo 'Error in file: <b> ' . $myFile . ' </b> on line: <b> ' . $myLine . ' </b>';
+        echo 'Error message: <b> ' . $errorMsg . '</b>';
+        die();
+    } else {
+        echo ' Houston, we have a problem!';
+        die();
+    }
+
 
 }

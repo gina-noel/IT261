@@ -1,9 +1,9 @@
 <?php
 include('server.php');
-//include ('includes/header.php');
+include ('includes/header-form.php');
 
 ?>
-
+<div id="wrapper">
 <h1>Register today</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
@@ -41,6 +41,10 @@ include('server.php');
     </fieldset>
 
 </form>
+    <h3>Already a member?</h3>
+    <span class="block"><a href="login.php">Log in here</a></span>
 
+</div><!--close wrapper-->
 
-
+</body>
+</html>

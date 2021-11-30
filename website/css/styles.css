@@ -80,17 +80,57 @@ nav a {
 }
 
 main {
-    width:61.70%;
+    width:60%;
     float: left;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin: 20px;
 }
 
 aside {
     width:36.17%;
-    height:300px;
     float: right;
-    margin-top: 180px;
+    margin-top: 30px;
+}
+
+#view-aside {
+    width:36.17%;
+    float: right;
+    margin-top: 100px;
+}
+
+#people {
+    width:520px;
+    float: left;
+    margin-top:30px;
+    margin-left:50px;
+}
+
+#peopleImg {
+    max-width: 100%;
+    width:430px;
+    float: right;
+    margin-top:120px;
+    margin-right:50px;
+}
+
+.desc {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+hr {
+    display: block;
+    margin-bottom: 50px;
+    height: 2px;
+    background-color: #336699;
+    border: none;
+    width:520px;
 }
 
 img {
@@ -101,6 +141,8 @@ img {
 li  {
     list-style-type: none;
     color: darkred;
+    margin-bottom: 10px;
+    margin-top: 10px
 }
 
 footer {
@@ -228,6 +270,3 @@ table td img {
     height: 200px;
     width: 300px;
 }
-
-
-
