@@ -1,35 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <title>Gina Noel's Portal Page</title>
-</head>
-<body>
-    <header>
-        <div class="header-inner">
-            <a href="index.html">
-                <img id="logo" src="images/logo.png" alt="image">
-                <!--    <img id="logo" src="images/logo.jpg" alt="image">-->
-            </a>
-        </div>
-    <nav id="primary">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="website/daily.php">Switch-3</a></li>
-            <li><a href="adder.php">Troubleshoot-4</a></li>
-            <li><a href="calculator.php">Calculator-5</a></li>
-            <li><a href="email.php">Email-6</a></li>
-            <li><a href="gallery.php">Gallery-7</a></li>
-            <li><a href="database.php">Database-8</a></li>
-        </ul>
-    </nav>
-</header>
+<?php
+include('config.php');
+include('includes/header.php'); ?>
+
     <!-- START WRAPPER -->
     <div class="wrapper">
-        <!-- START LEFT COL-->
-
         <main>
             <h1>Welcome to my portal page</h1>
             <h2>A little about me!</h2>
@@ -101,18 +75,5 @@
 
     </aside>
     <!-- END RIGHT COL -->
-
-    <!-- START Footer -->
-    <footer>
-        <p><small>&copy; 2020-<?=date("Y")?> by
-                <a>Gina Noel</a>, All Rights Reserved ~
-                <a id="html-checker" href="https://validator.w3.org/check/referer">Check HTML</a> ~
-                <a href="https://jigsaw.w3.org/css-validator/check?uri=referer">Check CSS</a></small>
-        </p>
-    </footer>
-
-    <!-- END Footer -->
-</div>
-<!-- END WRAPPER -->
-</body>
-</html>
+<?php
+include('includes/footer.php');
