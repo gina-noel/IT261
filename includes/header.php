@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href="css/nav.css" type="text/css" rel="stylesheet">
+    <link href="css/form.css" type="text/css" rel="stylesheet">
     <title>Gina Noel's Portal Page</title>
 </head>
     <header>
         <nav class="navbar">
             <div class="container-icon">
-                <a href="index.php"/>
-                    <h4>HijackingLife Web Design</h4>
+                <a href="final-project.php"><h4>HijackingLife Web Design</h4></a>
             </div>
             <ul class="nav-list" id="navi-list">
-                <li class="list-item"><a href="index.php">Home</a></li>
-                <li class="list-item"><a href="switch.php">Switch-3</a></li>
-                <li class="list-item"><a href="adder.php">Troubleshoot-4</a></li>
-                <li class="list-item"><a href="calculator.php">Calculator-5</a></li>
-                <li class="list-item"><a href="contact.php">Email-6</a></li>
-                <li class="list-item"><a href="gallery.php">Gallery-7</a></li>
-                <li class="list-item"><a href="database.php">Database-8</a></li>
-                </li>
+                <?php
+                echo my_nav($nav);
+                ?>
             </ul>
         </nav>
-    </header>
+<?php
+// Notification message
+// if successful, welcome the end user!
+if(isset($_SESSION['success'])) : ?>
 
+    <div class="success">
+        <h3>
+            <?php echo $_SESSION['success'];
+            unset($_SESSION['success']);
+            ?>
+        </h3>
+    </div> <!--end div success-->
+<?php endif ;
+
+
+if(isset($_SESSION['username'])) : ?>
+    <div class="welcome-logout">
+        <h3> Hello <?php echo $_SESSION['username'] ; ?>
+        </h3>
+        <p><a href="final-project.php?logout='1' ">Log out</a></p>
+    </div> <!--end welcome logout here-->
+<?php endif ; ?>
+
+    </header>

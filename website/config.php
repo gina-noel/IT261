@@ -39,14 +39,9 @@ switch(THIS_PAGE) {
         $headline = 'Welcome to your Daily Yoga Challenge!!';
         break;
     case 'people.php':
-        $title = 'People page of our IT261 Website';
-        $body = 'people inner';
-        $headline = 'Welcome to our People page of our IT261 Website';
-        break;
-    case 'people-view.php':
-        $title = 'People view page of our IT261 Website';
-        $body = 'people view inner';
-        $headline = 'Welcome to our People view page of our IT261 Website';
+        $title = 'Project page of our IT261 Website';
+        $body = 'project inner';
+        $headline = 'Welcome to our Project page of our IT261 Website';
         break;
     case 'contact.php':
         $title = 'Contact page of our IT261 Website';

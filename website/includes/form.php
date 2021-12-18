@@ -73,6 +73,7 @@
             <?php echo $studioLocation_Err; ?>
         </span>
 
+
         <label for="privacy">Privacy</label>
         <ul>
             <li><input type="radio" name="privacy" value="agree"<?php if(isset($_POST['privacy']) && $_POST['privacy'] == 'agree') echo 'checked="checked"';?>

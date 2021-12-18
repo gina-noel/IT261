@@ -3,7 +3,7 @@ include('config.php');
 include('includes/header.php'); ?>
 
     <!-- START WRAPPER -->
-    <div class="wrapper">
+    <div id="wrapper">
         <main>
             <h1>Welcome to my portal page</h1>
             <h2>A little about me!</h2>

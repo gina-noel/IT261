@@ -93,7 +93,7 @@ aside {
 
 #view-aside {
     width:36.17%;
-    float: right;
+    float: left;
     margin-top: 100px;
 }
 
@@ -121,7 +121,8 @@ aside {
 
 .center {
     display: block;
-    margin: 0 auto 20px auto;
+    width: 60%;
+    margin: 20px auto 20px auto;
 }
 
 hr {
